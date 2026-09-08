@@ -8,6 +8,7 @@
 | 首頁 | https://bortyng.github.io/howrite-legal/ |
 | 隱私權政策 | https://bortyng.github.io/howrite-legal/privacy.html |
 | 服務條款 | https://bortyng.github.io/howrite-legal/terms.html |
+| 刪除帳號與資料 | https://bortyng.github.io/howrite-legal/delete-account.html |
 
 ## 為什麼獨立成一個 repo
 
@@ -18,7 +19,7 @@
 
 ## 改動須知
 
-`privacy.html` 與 `terms.html` 在主 repo 的 `docs/` 底下也各有一份副本
+`privacy.html`、`terms.html` 與 `delete-account.html` 在主 repo 的 `docs/` 底下也各有一份副本
 （歷史原因，且 `docs/ios-launch-tutorial.md` 等文件會引用）。
 **兩邊要一起改**，否則 App 內連到的版本會與 repo 內的版本不一致。
 
