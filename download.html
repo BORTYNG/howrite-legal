@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>下載好寫 Howrite</title>
+<style>
+  body{max-width:480px;margin:60px auto;padding:0 20px;text-align:center;
+    font-family:-apple-system,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+    color:#241a38;line-height:1.8}
+  h1{font-size:24px}
+  a.btn{display:block;margin:14px 0;padding:14px;border-radius:10px;background:#6d3bd4;color:#fff;
+    text-decoration:none;font-size:18px}
+  .muted{color:#6b6480;font-size:14px}
+</style>
+</head>
+<body>
+  <h1>好寫 Howrite</h1>
+  <p class="muted" id="msg">正在帶你去下載頁…沒有自動跳的話，點下面的按鈕。</p>
+  <a class="btn" id="ios" href="https://apps.apple.com/tw/app/id6790149515">iPhone／iPad 下載</a>
+  <a class="btn" id="android" href="https://play.google.com/store/apps/details?id=com.howrite.app&amp;referrer=utm_source%3Dmeta%26utm_medium%3Dpaid">Android 下載</a>
+<script>
+  var ua = navigator.userAgent || "";
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/.test(ua);
+  var target = isIOS ? "ios" : isAndroid ? "android" : null;
+  if (target) location.replace(document.getElementById(target).href);
+</script>
+</body>
+</html>
